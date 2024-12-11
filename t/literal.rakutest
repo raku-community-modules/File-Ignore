@@ -1,5 +1,8 @@
-use File::Ignore;
 use Test;
+
+use File::Ignore;
+
+plan 18;
 
 my $ig = File::Ignore.parse(q:to/LIST/);
     foo
@@ -30,4 +33,4 @@ nok $ig.ignore-file('alright/baz'), '"baz/" does not ignore file "alright/baz"';
 ok $ig.ignore-directory('baz'), '"bar/" ignores root directory "bar"';
 ok $ig.ignore-directory('alright/baz'), '"baz/" ignores directory "alright/baz"';
 
-done-testing;
+# vim: expandtab shiftwidth=4

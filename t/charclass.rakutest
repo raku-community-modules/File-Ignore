@@ -1,5 +1,8 @@
-use File::Ignore;
 use Test;
+
+use File::Ignore;
+
+plan 18;
 
 my $ig = File::Ignore.parse(q:to/LIST/);
     result-[AB].txt
@@ -26,4 +29,4 @@ nok $ig.ignore-directory('gen.dat'), '"gen[!0].dat" does not ignore directory ge
 nok $ig.ignore-file('gen/.dat'), '"gen[!0].dat" does not ignore file gen/.dat';
 nok $ig.ignore-directory('gen/.dat'), '"gen[!0].dat" does not ignore directory gen/.dat';
 
-done-testing;
+# vim: expandtab shiftwidth=4

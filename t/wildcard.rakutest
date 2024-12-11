@@ -1,5 +1,8 @@
-use File::Ignore;
 use Test;
+
+use File::Ignore;
+
+plan 44;
 
 my $ig = File::Ignore.parse(q:to/LIST/);
     *.swp
@@ -63,4 +66,4 @@ ok $ig.ignore-directory('d/x'), '"d/**" ignores directory d/x';
 ok $ig.ignore-file('d/x/yy'), '"d/**" ignores file d/x/yy';
 ok $ig.ignore-directory('d/x/yy'), '"d/**" ignores directory d/x/yy';
 
-done-testing;
+# vim: expandtab shiftwidth=4

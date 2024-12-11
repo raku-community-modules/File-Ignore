@@ -1,5 +1,6 @@
-use File::Ignore;
 use Test;
+
+use File::Ignore;
 
 plan 5;
 
@@ -22,3 +23,5 @@ ok $ig.ignore-path('foo.pm6.swp'), 'ignore-path ignores [._]s[a-w][a-z]';
 nok $ig.ignore-path('foo.pm6.sxp'), 'ignore-path does not ignore *.sxp';
 ok $ig.ignore-path('foo.X-'), 'range handles dangling “-”';
 ok $ig.ignore-path('foo.X.'), 'range handles prepended “-”';
+
+# vim: expandtab shiftwidth=4

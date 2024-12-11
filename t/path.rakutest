@@ -1,5 +1,8 @@
-use File::Ignore;
 use Test;
+
+use File::Ignore;
+
+plan 9;
 
 # These tests cover the difference between ignore-file and ignore-path:
 # ignore-file assumes that you'll never feed it files found in a directory
@@ -24,4 +27,4 @@ ok $ig.ignore-path('baz/fizz'), 'ignore-path ignores baz/fizz';
 ok $ig.ignore-path('baz/fizz/wizz'), 'ignore-file ignores baz/fizz/wizz';
 nok $ig.ignore-path('ba'), 'ignore-path does not ingore ba';
 
-done-testing;
+# vim: expandtab shiftwidth=4

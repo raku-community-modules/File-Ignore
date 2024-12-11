@@ -1,13 +1,23 @@
 {
-    "perl"          : "6.*",
-    "name"          : "File::Ignore",
-    "version"       : "1.1",
-    "description"   : "Parsing and application of .gitignore-style ignore files.",
-    "author"        : "Jonathan Worthington <jnthn@jnthn.net>",
-    "license"       : "Artistic-2.0",
-    "depends"       : [],
-    "provides"      : {
-		"File::Ignore" : "lib/File/Ignore.pm6"
-    },
-    "source-url"    : "https://github.com/jnthn/p6-file-ignore.git"
+  "auth": "zef:raku-community-modules",
+  "author": "Jonathan Worthington",
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Parsing and application of .gitignore-style ignore files",
+  "license": "Artistic-2.0",
+  "name": "File::Ignore",
+  "perl": "6.*",
+  "provides": {
+    "File::Ignore": "lib/File/Ignore.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "https://github.com/raku-community-modules/File-Ignore.git",
+  "tags": [ "GITIGNORE"
+  ],
+  "test-depends": [
+  ],
+  "version": "1.1"
 }

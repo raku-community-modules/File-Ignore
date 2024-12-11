@@ -1,5 +1,8 @@
-use File::Ignore;
 use Test;
+
+use File::Ignore;
+
+plan 8;
 
 my $ig = File::Ignore.parse(q:to/LIST/);
     .git/
@@ -19,4 +22,4 @@ ok $ig.ignore-file('foo/bar/nok'), 'Negated rule does not break ignoring of othe
 nok $ig.ignore-path('foo/bar/ok'), 'Negated rule means ok path not ignored';
 ok $ig.ignore-path('foo/bar/nok'), 'Having negated rules does not break other path checks';
 
-done-testing;
+# vim: expandtab shiftwidth=4
