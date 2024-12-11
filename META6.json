@@ -15,9 +15,10 @@
   "resources": [
   ],
   "source-url": "https://github.com/raku-community-modules/File-Ignore.git",
-  "tags": [ "GITIGNORE"
+  "tags": [
+    "GITIGNORE"
   ],
   "test-depends": [
   ],
-  "version": "1.1"
+  "version": "1.2"
 }

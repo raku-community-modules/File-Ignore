@@ -1,4 +1,6 @@
 Revision history for File::Ignore
 
 {{$NEXT}}
+
+1.2  2024-12-11T21:08:19+01:00
     - Initial version as a Raku Community Module
